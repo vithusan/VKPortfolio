@@ -1,0 +1,11 @@
+.centerDiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #546e7a;
+    padding: 20px;
+}
