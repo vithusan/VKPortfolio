@@ -48,3 +48,7 @@ code {
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+.material-icons.md-70 { 
+  font-size: 70px; 
+}
