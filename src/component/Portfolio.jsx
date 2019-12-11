@@ -25,20 +25,16 @@ class Portfolio extends Component {
                 github: 'https://github.com/vithusan/connect4',
                 language: ['Python', 'CSS', 'JavaScript']
             }
-        ],
-        isHovering: false
+        ]
     }
 
-    toggleHover = () => {
-        this.setState({ isHovering: !this.state.isHovering })
-    }
 
     render() {
         return (
             <div className='mainDiv'>
                 <h1 className='animated fadeInDown delay-1s'>PORTFOLIO</h1>
                 <div className='portfolioCenterDiv'>
-                    <Link to='/'><i className="material-icons md-70 animated fadeInLeft delay-2s">keyboard_arrow_left</i></Link>
+                    <Link to='/'><i className="material-icons md-70 animated fadeInLeft delay-1s">keyboard_arrow_left</i></Link>
                     <div className='listOfProjects' >
                         {this.state.projects.map((project) => {
                             return (
