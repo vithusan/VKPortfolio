@@ -6,28 +6,28 @@ class Portfolio extends Component {
     state = {
         projects: [
             {
-                img: '/img/screenShot.png',
+                img: '/img/project4.png',
                 github: 'https://github.com/vithusan/Project4_Django',
-                deployed: '',
+                deployed: '#',
                 language: ['React', 'Django', 'Python', 'JavaScript']
             },
             {
-                img: '/img/screenShot.png',
-                github: 'https://github.com/vithusan/project3_MERN',
+                img: '/img/project1.png',
+                github: 'https://github.com/vithusan/connect4',
                 deployed: 'https://pages.git.generalassemb.ly/vithusan/P1-connect4/',
-                language: ['React', 'JavaScript', 'MongoDb', 'Express']
+                language: ['JavaScript', 'HTML5', 'CSS3']
             },
             {
-                img: '/img/screenShot.png',
+                img: '/img/project2.png',
                 github: 'https://github.com/vithusan/project2',
                 deployed: 'https://tranquil-inlet-04681.herokuapp.com/type',
                 language: ['JavaScript', 'Handlebars', 'MongoDb', 'Express']
             },
             {
-                img: '/img/screenShot.png',
-                github: 'https://github.com/vithusan/connect4',
+                img: '/img/project3.png',
+                github: 'https://github.com/vithusan/project3_MERN',
                 deployed: 'https://stormy-bastion-82943.herokuapp.com/',
-                language: ['JavaScript', 'HTML5', 'CSS3']
+                language: ['React', 'JavaScript', 'MongoDb', 'Express']
             }
         ]
     }

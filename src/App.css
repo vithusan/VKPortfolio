@@ -37,7 +37,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 
@@ -83,7 +83,7 @@
 }
 
 .projectContainer:hover .singleProject {
-    opacity: 0.5;
+    opacity: 0.2;
     transition: 0.3s;
 }
 
