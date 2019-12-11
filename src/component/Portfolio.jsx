@@ -8,22 +8,26 @@ class Portfolio extends Component {
             {
                 img: '/img/screenShot.png',
                 github: 'https://github.com/vithusan/Project4_Django',
-                language: ['HTML', 'CSS', 'JavaScript']
+                deployed: '',
+                language: ['React', 'Django', 'Python', 'JavaScript']
             },
             {
                 img: '/img/screenShot.png',
                 github: 'https://github.com/vithusan/project3_MERN',
-                language: ['HandleBars', 'CSS', 'JavaScript']
+                deployed: 'https://pages.git.generalassemb.ly/vithusan/P1-connect4/',
+                language: ['React', 'JavaScript', 'MongoDb', 'Express']
             },
             {
                 img: '/img/screenShot.png',
                 github: 'https://github.com/vithusan/project2',
-                language: ['React', 'CSS', 'JavaScript']
+                deployed: 'https://tranquil-inlet-04681.herokuapp.com/type',
+                language: ['JavaScript', 'Handlebars', 'MongoDb', 'Express']
             },
             {
                 img: '/img/screenShot.png',
                 github: 'https://github.com/vithusan/connect4',
-                language: ['Python', 'CSS', 'JavaScript']
+                deployed: 'https://stormy-bastion-82943.herokuapp.com/',
+                language: ['JavaScript', 'HTML5', 'CSS3']
             }
         ]
     }
@@ -34,7 +38,7 @@ class Portfolio extends Component {
             <div className='mainDiv'>
                 <h1 className='animated fadeInDown'>PORTFOLIO</h1>
                 <div className='portfolioCenterDiv'>
-                    <Link to='/'><i className="material-icons md-70 animated fadeInLeft delay-1s">keyboard_arrow_left</i></Link>
+                    <Link to='/' className='test animated fadeInLeft delay-1s'><i className="material-icons md-70">keyboard_arrow_left</i>Back</Link>
                     <div className='listOfProjects' >
                         {this.state.projects.map((project) => {
                             return (
@@ -50,7 +54,7 @@ class Portfolio extends Component {
                                         })}
                                         <div className='hoverBtnDiv'>
                                             <a href={project.github} target="_blank" className='hoverBtn'> GitHub</a>
-                                            <a href={project.github} target="_blank" className='hoverBtn'> Deployed</a>
+                                            <a href={project.deployed} target="_blank" className='hoverBtn'> Deployed</a>
                                         </div>
                                     </div>
                                 </div>

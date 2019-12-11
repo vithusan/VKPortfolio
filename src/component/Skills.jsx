@@ -26,7 +26,7 @@ class Skills extends Component {
                         <i className="devicon-css3-plain-wordmark languageIcon"></i>
                         <i className="devicon-babel-plain languageIcon"></i>
                     </div>
-                    <Link to='/'><i className="material-icons md-70 animated fadeInRight delay-1s">keyboard_arrow_right</i></Link>
+                    <Link to='/' className='animated fadeInRight delay-1s test'>Back<i className="material-icons md-70 ">keyboard_arrow_right</i></Link>
                 </div>
             </div>
         );
