@@ -53,4 +53,9 @@
     width: 380px;
     height: 240px;
     margin-bottom: 45px;
+    box-shadow: 2px 4px 8px 4px #29434e;
+}
+
+.testh2{
+    font-weight: 300;
 }

@@ -9,7 +9,7 @@ class Homepage extends Component {
                 <div className='centerDiv'>
                     <Link to='/skill'><i className="material-icons md-70 animated fadeInLeft delay-2s">keyboard_arrow_left</i></Link>
                     <div className='aboutDiv'>
-                        <h1 className="animated fadeInDown delay-1s">VITHUSAN</h1>
+                        <h1 className="animated fadeInDown delay-1s">VK</h1>
                         <h2 className="animated fadeInDown delay-2s">Software Engineer</h2>
                         <p className="animated fadeInDown delay-2s aboutTag">Detail-oriented software engineer with proficient in JavaScript,
                             React and Node.Js.  Experienced building web apps in fast-paced
