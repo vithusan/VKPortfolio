@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import Contact from './Contact'
+
 
 class Homepage extends Component {
 
@@ -11,14 +13,15 @@ class Homepage extends Component {
                     <div className='aboutDiv'>
                         <h1 className="animated fadeInDown delay-1s">VK</h1>
                         <h2 className="animated fadeInDown delay-1s">Software Engineer</h2>
-                        <p className="animated fadeInDown delay-1s aboutTag">Detail-oriented software engineer with proficient in JavaScript,
+                        <p className="animated fadeInDown delay-1s aboutTag">Detail-oriented software engineer with proficiency in JavaScript,
                             React and Node.Js.  Experienced building web apps in fast-paced
                         and collaborative working environments. </p>
                     </div>
                     <Link to='/portfolio'><i className="material-icons md-70 animated fadeInRight delay-1s">keyboard_arrow_right</i></Link>
                 </div>
-                <div className='arrow_down'>
-                    <Link to='/contact'><i className="material-icons md-70 animated fadeInUp delay-1s">keyboard_arrow_down</i></Link>
+                <div className='animated fadeInUp delay-1s bottomSection'>
+                    {/* <Link to='/contact'><i className="material-icons md-70 animated fadeInUp delay-1s">keyboard_arrow_down</i></Link> */}
+                    <Contact />
                 </div>
             </div>
         );

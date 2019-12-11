@@ -4,16 +4,13 @@ import { Link } from 'react-router-dom'
 
 class Skills extends Component {
 
-    // state = {
-
-    // }
 
     render() {
         return (
             <div className='mainDiv'>
-                <h1 className='animated fadeInDown delay-1s'>Skills</h1>
+                <h1 className='animated fadeInDown'>Skills</h1>
                 <div className='skillCenterDiv'>
-                    <div className='animated fadeInLeft delay-1s listOfSkills'>
+                    <div className='animated fadeInLeft listOfSkills'>
                         <i className="devicon-react-original-wordmark languageIcon"></i>
                         <i className="devicon-python-plain-wordmark languageIcon"></i>
                         <i className="devicon-postgresql-plain-wordmark languageIcon"></i>
