@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom'
 
 class Homepage extends Component {
 
+    testFunction = (e) => {
+        e.preventDefault()
+    }
 
     render() {
         return (
             <div className='mainDiv'>
                 <div className='centerDiv'>
-                    <Link to='/skill'><i className="material-icons md-70 animated fadeInLeft delay-2s">keyboard_arrow_left</i></Link>
+                    <Link to='/skill' ><i className="material-icons md-70 animated fadeInLeft delay-2s">keyboard_arrow_left</i></Link>
                     <div className='aboutDiv'>
                         <h1 className="animated fadeInDown delay-1s">VK</h1>
                         <h2 className="animated fadeInDown delay-2s">Software Engineer</h2>
@@ -16,7 +19,7 @@ class Homepage extends Component {
                             React and Node.Js.  Experienced building web apps in fast-paced
                         and collaborative working environments. </p>
                     </div>
-                    <Link to='/portfolio'><i className="material-icons md-70 animated fadeInRight delay-2s">keyboard_arrow_right</i></Link>
+                    <Link to='/portfolio' onClick={this.testFunction}><i className="material-icons md-70 animated fadeInRight delay-2s">keyboard_arrow_right</i></Link>
                 </div>
                 <div className='arrow_down'>
                     <Link to='/contact'><i className="material-icons md-70 animated fadeInUp delay-2s">keyboard_arrow_down</i></Link>
