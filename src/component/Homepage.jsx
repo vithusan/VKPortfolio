@@ -11,7 +11,7 @@ class Homepage extends Component {
                 <div className='centerDiv'>
                     <Link to='/skill' className='animated fadeInLeft delay-1s test'><i className="material-icons md-70 ">keyboard_arrow_left</i>Skills</Link>
                     <div className='aboutDiv'>
-                        <h1 className="animated fadeInDown delay-1s">VK</h1>
+                        <h1 className="animated fadeInDown delay-1s title">VK</h1>
                         <h2 className="animated fadeInDown delay-1s">Software Engineer</h2>
                         <p className="animated fadeInDown delay-1s aboutTag">Detail-oriented software engineer with proficiency in JavaScript,
                             React and Node.Js.  Experienced building web apps in fast-paced
