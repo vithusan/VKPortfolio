@@ -52,10 +52,69 @@
 .singleProject{
     width: 380px;
     height: 240px;
-    margin-bottom: 45px;
-    box-shadow: 2px 4px 8px 4px #29434e;
 }
 
-.testh2{
-    font-weight: 300;
+.projectContainer {
+    width: 380px;
+    height: 240px;
+    margin-bottom: 45px;
+    box-shadow: 2px 4px 8px 4px #29434e;
+    position: relative;
+    background: #000;
+
+}
+
+.projectContainer:hover .singleProject {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.projectContainer:hover .overlay {
+    display: flex;
+    opacity: 1;
+    transition: 0.3s;
+
+}
+
+.overlay {
+    position: absolute;
+    display: none;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    justify-content: space-around;
+    align-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.languageList {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background: #29434e;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+.hoverBtn {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    background: #dd2c00;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hoverBtn:hover {
+    background: #a3000081;
+}
+
+.hoverBtnDiv {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
 }
