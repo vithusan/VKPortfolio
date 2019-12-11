@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+
 
 class Portfolio extends Component {
     state = {
@@ -35,27 +37,30 @@ class Portfolio extends Component {
         return (
             <div className='mainDiv'>
                 <h1 className='animated fadeInDown delay-1s'>PORTFOLIO</h1>
-                <div className='listOfProjects' >
-                    {this.state.projects.map((project) => {
-                        return (
-                            <div className='animated fadeInRight delay-1s projectContainer'>
-                                <img src={project.img} alt="project" className="singleProject" />
-                                <div className='overlay animated bounceIn'>
-                                    {project.language.map((singleLan) => {
-                                        return (
-                                            <div className='languageList'>
-                                                {singleLan}
-                                            </div>
-                                        )
-                                    })}
-                                    <div className='hoverBtnDiv'>
-                                        <a href={project.github} target="_blank" className='hoverBtn'> GitHub</a>
-                                        <a href={project.github} target="_blank" className='hoverBtn'> Deployed</a>
+                <div className='portfolioCenterDiv'>
+                    <Link to='/'><i className="material-icons md-70 animated fadeInLeft delay-2s">keyboard_arrow_left</i></Link>
+                    <div className='listOfProjects' >
+                        {this.state.projects.map((project) => {
+                            return (
+                                <div className='animated fadeInRight delay-1s projectContainer'>
+                                    <img src={project.img} alt="project" className="singleProject" />
+                                    <div className='overlay animated bounceIn'>
+                                        {project.language.map((singleLan) => {
+                                            return (
+                                                <div className='languageList'>
+                                                    {singleLan}
+                                                </div>
+                                            )
+                                        })}
+                                        <div className='hoverBtnDiv'>
+                                            <a href={project.github} target="_blank" className='hoverBtn'> GitHub</a>
+                                            <a href={project.github} target="_blank" className='hoverBtn'> Deployed</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        )
-                    })}
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         );
