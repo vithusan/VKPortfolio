@@ -4,7 +4,7 @@ class Contact extends Component {
     render() {
         return (
             <div className='contactDiv'>
-                <h4 className=''>VITHUSHAN1011@HOTMAIL.COM</h4>
+                <h4 className='emailId'>VITHUSHAN1011@HOTMAIL.COM</h4>
                 <div className='listOfContactIcons'>
                     <img src='/img/github.png' alt="socialMedia" className='contactIcons' />
                     <img src='/img/linkedin.png' alt="socialMedia" className='contactIcons' />

@@ -171,3 +171,17 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
+
+.emailId {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    background: #dd2c00;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.emailId:hover {
+    background: #a3000081;
+
+}
