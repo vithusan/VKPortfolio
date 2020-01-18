@@ -8,7 +8,7 @@ class Portfolio extends Component {
             {
                 img: '/img/project4.png',
                 github: 'https://github.com/vithusan/Project4_Django',
-                deployed: '#',
+                deployed: 'http://18.188.218.226:3000/',
                 language: ['React', 'Django', 'Python', 'JavaScript']
             },
             {
