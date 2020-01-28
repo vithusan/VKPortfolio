@@ -27,7 +27,7 @@ class Skills extends Component {
                         <i className="devicon-express-original languageIcon"></i>
                         <i className="devicon-django-plain languageIcon"></i>
                         <i className="devicon-css3-plain-wordmark languageIcon"></i>
-                        <i className="devicon-babel-plain languageIcon"></i>
+                        <i className="devicon-amazonwebservices-plain-wordmark languageIcon"></i>
                     </div>
                 </div>
             </div>
