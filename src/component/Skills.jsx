@@ -7,12 +7,12 @@ class Skills extends Component {
 
     render() {
         return (
-            <div className='mainDiv animated fadeInUp'>
+            <div className='mainDiv'>
                 <div className='skillsNav'>
-                    <h1 className='animated fadeInDown delay-1s skillsTitle'>Skills</h1>
-                    <Link to='/' className='animated fadeInRight delay-1s test'>Back</Link>
+                    <h1 className='animated fadeInDown skillsTitle'>Skills</h1>
+                    <Link to='/' className='animated fadeInRight delay-1s nav'>Back</Link>
                 </div>
-                <div className='skillCenterDiv'>
+                <div className='skillCenterDiv animated fadeInUp'>
                     <div className='listOfSkills'>
                         <i className="devicon-react-original-wordmark languageIcon"></i>
                         <i className="devicon-python-plain-wordmark languageIcon"></i>

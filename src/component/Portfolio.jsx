@@ -35,12 +35,12 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <div className='mainDiv animated fadeInUp'>
+            <div className='mainDiv'>
                 <div className='portfolioNav'>
-                    <Link to='/' className='test animated fadeInLeft delay-1s'>Back</Link>
-                    <h1 className='animated fadeInDown delay-1s portfolioTitle'>PORTFOLIO</h1>
+                    <Link to='/' className='animated fadeInLeft delay-1s nav'>Back</Link>
+                    <h1 className='animated fadeInDown portfolioTitle'>PORTFOLIO</h1>
                 </div>
-                <div className='portfolioCenterDiv'>
+                <div className='portfolioCenterDiv animated fadeInUp'>
                     <div className='listOfProjects' >
                         {this.state.projects.map((project) => {
                             return (

@@ -1,5 +1,4 @@
 html, body {
-    /* background: #337ea1a8; */
     background: #3aafa9;
     width: 100vw;
     height: 100vh;
@@ -115,7 +114,6 @@ html, body {
 
 .projectDiv {
     margin-bottom: 45px;
-    /* box-shadow: 7px 7px 8px 1px #05386b; */
 }
 
 .projectContainer {
@@ -231,14 +229,14 @@ a {
     justify-content: space-evenly;
 }
 
-.test {
+.nav {
     text-decoration: none;
     color: #17252a;
     font-size: 20px;
     text-transform: uppercase;
 }
 
-.test:after {
+.nav:after {
     display: block;
     content: '';
     border-bottom: 2px solid #17252a;
@@ -246,15 +244,14 @@ a {
     transition: transform 250ms ease-in-out;
 }
 
-.test:hover:after {
+.nav:hover:after {
     transform: scaleX(1);
 }
 
-.title{
+.logo{
     font-size: 5em;
     border: 1px solid #17252a;
     border-radius: 50%;
-    /* background: #05386b; */
     background: #17252a;
     font-weight: 400;
     overflow: hidden;
@@ -276,7 +273,7 @@ a {
     }
 }
 
-/*--Mobiles--*/
+/*--mobiles--*/
 @media only screen and (max-width: 500px){
     .aboutTag {
         width: 80%;
