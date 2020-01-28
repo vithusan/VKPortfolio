@@ -35,16 +35,27 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <div className='mainDiv'>
-                <h1 className='animated fadeInDown'>PORTFOLIO</h1>
+            <div className='mainDiv animated fadeInUp'>
+                <div className='portfolioNav'>
+                    <Link to='/' className='test animated fadeInLeft delay-1s'>Back</Link>
+                    <h1 className='animated fadeInDown delay-1s portfolioTitle'>PORTFOLIO</h1>
+                </div>
                 <div className='portfolioCenterDiv'>
-                    <Link to='/' className='test animated fadeInLeft delay-1s'><i className="material-icons md-70">keyboard_arrow_left</i>Back</Link>
                     <div className='listOfProjects' >
                         {this.state.projects.map((project) => {
                             return (
-                                <div className='animated fadeInRight projectContainer'>
-                                    <img src={project.img} alt="project" className="singleProject" />
-                                    <div className='overlay animated bounceIn'>
+                                <div className='projectDiv'>
+                                    <div className='projectContainer'>
+                                        <a href={project.deployed} target="_blank">
+                                            <img src={project.img} alt="project" className="singleProject" />
+                                            <div className='overlay animated bounceIn'>
+                                                <div className='hoverBtnDiv'>
+                                                    View
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div className='listOfLanguages'>
                                         {project.language.map((singleLan) => {
                                             return (
                                                 <div className='languageList'>
@@ -52,10 +63,7 @@ class Portfolio extends Component {
                                                 </div>
                                             )
                                         })}
-                                        <div className='hoverBtnDiv'>
-                                            <a href={project.github} target="_blank" className='hoverBtn'> GitHub</a>
-                                            <a href={project.deployed} target="_blank" className='hoverBtn'> Deployed</a>
-                                        </div>
+                                        <a href={project.github} target="_blank" className='githubLink'> GitHub</a>
                                     </div>
                                 </div>
                             )

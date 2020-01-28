@@ -7,20 +7,20 @@ class Homepage extends Component {
 
     render() {
         return (
-            <div className='mainDiv'>
+            <div className='mainDiv animated fadeInUp'>
+                <div className='topNav'>
+                    <Link to='/skill' className='animated fadeInLeft delay-1s test'>Skills</Link>
+                    <Link to='/portfolio' className='animated fadeInRight delay-1s test'>Portfolio</Link>
+                </div>
                 <div className='centerDiv'>
-                    <Link to='/skill' className='animated fadeInLeft delay-1s test'><i className="material-icons md-70 ">keyboard_arrow_left</i>Skills</Link>
                     <div className='aboutDiv'>
                         <h1 className="animated fadeInDown delay-1s title">VK</h1>
-                        <h2 className="animated fadeInDown delay-1s">Software Engineer</h2>
-                        <p className="animated fadeInDown delay-1s aboutTag">Detail-oriented software engineer with proficiency in JavaScript,
-                            React and Node.Js.  Experienced building web apps in fast-paced
+                        <h2 className="animated fadeInDown ">Software Engineer</h2>
+                        <p className="animated fadeInDown aboutTag">Detail-oriented software engineer with proficiency in JavaScript,
+                        React and Node.Js.  Experienced building web apps in fast-paced
                         and collaborative working environments. </p>
+                        <Contact />
                     </div>
-                    <Link to='/portfolio' className='animated fadeInRight delay-1s test'>Portfolio<i className="material-icons md-70 ">keyboard_arrow_right</i></Link>
-                </div>
-                <div className='animated fadeInUp delay-1s bottomSection'>
-                    <Contact />
                 </div>
             </div>
         );

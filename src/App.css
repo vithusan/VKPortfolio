@@ -1,7 +1,20 @@
-.mainDiv {
-    background: #546e7a;
-    width: 100%;
+html, body {
+    /* background: #337ea1a8; */
+    background: #3aafa9;
+    width: 100vw;
     height: 100vh;
+    overflow: auto;
+}
+
+.topNav {
+    width: 95%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mainDiv {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -11,33 +24,26 @@
 }
 
 .centerDiv {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10%;
 }
 
 .portfolioCenterDiv {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-right: 17%;
 }
 
 
 .skillCenterDiv {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 12%;
+    margin-top: 5%;
 }
 
 
@@ -46,10 +52,17 @@
     flex-direction: column;
     align-items: center;
 }
+.aboutDiv h2{
+    color: #17252a;
+
+}
 
 .aboutTag {
     width: 40%;
     text-align: center;
+    color: #17252a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
 }
 
 .material-icons{
@@ -57,14 +70,42 @@
     color: #fff;
 }
 
-.listOfProjects {
-    width: 57%;
+.portfolioNav {
+    width: 95%;
+    margin: 0;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    flex-wrap: wrap;
-    height: 100%;
+    align-items: center;
+}
+
+.portfolioNav .portfolioTitle{
+    margin: 0 auto;
+    color: #17252a;
+}
+
+.skillsNav {
+    width: 95%;
+    margin: 0;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skillsNav .skillsTitle {
+    margin: 0 auto 0 47%;
+    color: #17252a;
+
+}
+
+.listOfProjects {
+    margin: 50px 0px;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .singleProject{
@@ -72,14 +113,16 @@
     height: 240px;
 }
 
+.projectDiv {
+    margin-bottom: 45px;
+    /* box-shadow: 7px 7px 8px 1px #05386b; */
+}
+
 .projectContainer {
     width: 380px;
     height: 240px;
-    margin-bottom: 45px;
-    box-shadow: 2px 4px 8px 4px #29434e;
     position: relative;
-    background: #000;
-
+    background: #17252a;
 }
 
 .projectContainer:hover .singleProject {
@@ -105,42 +148,56 @@
     align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .languageList {
-    /* padding: 8px;
-    border-radius: 4px;
-    border: none;
-    background: #29434e; */
     color: #fff;
     font-size: 24px;
-    margin-bottom: 5px;
+    padding: 0px 10px;
 }
 
+.listOfLanguages {
+    background: #17252a;
+    width: 380px;
+    height: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px;
+}
 
-.hoverBtn {
-    text-decoration: none;
+.githubLink {
+    font-size: 20px;
     color: #fff;
-    padding: 8px;
-    background: #dd2c00;
-    cursor: pointer;
-    border-radius: 4px;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    margin: 0px 10px;
 }
 
-.hoverBtn:hover {
-    background: #a3000081;
+.githubLink:hover {
+    background: #69a4bb;
+
 }
 
+a {
+    text-decoration: none;
+
+}
 .hoverBtnDiv {
     width: 70%;
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    color: #fff;
+    font-size: 2em;
 }
 
 .languageIcon {
     font-size: 7em;
     padding: 35px; 
+    color: #fff;
 }
 
 .listOfSkills {
@@ -152,71 +209,88 @@
     flex-wrap: wrap;
 }
 
-.contactIcons {
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    border-radius: 10px;
-    border: 1px solid #fff;
-}
-
-.contactIcons1 {
-    width: 50px;
-    height: 50px;
-    background: #fff;
+.contactIcons svg{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
     border-radius: 50%;
-    border: 1px solid #fff;
-
 }
 
-.contactIcons:hover, .contactIcons1:hover {
-    box-shadow: 2px 4px 8px 4px #132025;
-
+.contactIcons svg path {
+    fill: #17252a !important;
 }
 
-.listOfContactIcons {
+.contactIcons:hover > svg path{
+    fill: #fff !important;
+}
+
+.contactDiv {
+    width: 25%;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 }
 
-
-.bottomSection {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background: #29434e;
-    padding-bottom: 10px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-}
-
-.emailId {
-    
-    padding: 8px;
-    background: #dd2c009f;
-    cursor: pointer;
-    border-radius: 4px;
-    margin: 10px 0;
-}
-
-.emailId a{
-    text-decoration: none;
-    color: #fff;
-
-}
-.emailId:hover {
-    background: #a3000034;
-
-}
-
 .test {
-    display: flex;
-    align-items: center;
     text-decoration: none;
-    color: #fff;
+    color: #17252a;
     font-size: 20px;
+    text-transform: uppercase;
+}
+
+.test:after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid #17252a;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.test:hover:after {
+    transform: scaleX(1);
 }
 
 .title{
-    font-size: 4em;
+    font-size: 5em;
+    border: 1px solid #17252a;
+    border-radius: 50%;
+    /* background: #05386b; */
+    background: #17252a;
+    font-weight: 400;
+    overflow: hidden;
+    font-style: italic;
+}
+
+
+/*--tablets--*/
+@media only screen and (max-width: 800px) {
+    .aboutTag {
+        width: 60%;
+    }
+    .languageIcon {
+        font-size: 5em;
+        padding: 25px; 
+    }
+}
+
+/*--Mobiles--*/
+@media only screen and (max-width: 500px){
+    .aboutTag {
+        width: 80%;
+    }
+    .languageIcon {
+        font-size: 5em;
+        padding: 15px; 
+    }
+    .portfolioNav .portfolioTitle{
+        margin: 0 25% 0 auto;
+    }
+    .skillsNav .skillsTitle {
+        margin: 0 auto 0 41%;
+    }
+
+    .contactDiv {
+        width: 60%;
+    }
 }

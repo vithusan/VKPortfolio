@@ -7,10 +7,13 @@ class Skills extends Component {
 
     render() {
         return (
-            <div className='mainDiv'>
-                <h1 className='animated fadeInDown'>Skills</h1>
+            <div className='mainDiv animated fadeInUp'>
+                <div className='skillsNav'>
+                    <h1 className='animated fadeInDown delay-1s skillsTitle'>Skills</h1>
+                    <Link to='/' className='animated fadeInRight delay-1s test'>Back</Link>
+                </div>
                 <div className='skillCenterDiv'>
-                    <div className='animated fadeInLeft listOfSkills'>
+                    <div className='listOfSkills'>
                         <i className="devicon-react-original-wordmark languageIcon"></i>
                         <i className="devicon-python-plain-wordmark languageIcon"></i>
                         <i className="devicon-postgresql-plain-wordmark languageIcon"></i>
@@ -26,7 +29,6 @@ class Skills extends Component {
                         <i className="devicon-css3-plain-wordmark languageIcon"></i>
                         <i className="devicon-babel-plain languageIcon"></i>
                     </div>
-                    <Link to='/' className='animated fadeInRight delay-1s test'>Back<i className="material-icons md-70 ">keyboard_arrow_right</i></Link>
                 </div>
             </div>
         );
