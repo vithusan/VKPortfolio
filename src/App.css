@@ -295,4 +295,15 @@ a {
     .contactDiv {
         width: 60%;
     }
+    .projectContainer {
+        width: 340px;
+        height: 220px;
+    }
+    .singleProject{
+        width: 340px;
+        height: 220px;
+    }
+    .listOfLanguages{
+        width: 340px;
+    }
 }
