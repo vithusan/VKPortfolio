@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import project1 from '../assets/project1.png';
+import project2 from '../assets/project2.png';
+import project3 from '../assets/project3.png';
+import project4 from '../assets/project4.png';
 
 
 
@@ -7,25 +11,25 @@ class Portfolio extends Component {
     state = {
         projects: [
             {
-                img: '../src/images/project4.png',
+                img: `${project4}`,
                 github: 'https://github.com/vithusan/Project4_Django',
                 deployed: 'http://18.188.218.226:3000/',
                 language: ['React', 'Django', 'Python', 'JavaScript']
             },
             {
-                img: './images/project1.png',
+                img: `${project1}`,
                 github: 'https://github.com/vithusan/connect4',
                 deployed: 'https://pages.git.generalassemb.ly/vithusan/P1-connect4/',
                 language: ['JavaScript', 'HTML5', 'CSS3']
             },
             {
-                img: './images/project2.png',
+                img: `${project2}`,
                 github: 'https://github.com/vithusan/project2',
                 deployed: 'https://tranquil-inlet-04681.herokuapp.com/type',
                 language: ['JavaScript', 'Handlebars', 'MongoDb', 'Express']
             },
             {
-                img: './images/project3.png',
+                img: `${project3}`,
                 github: 'https://github.com/vithusan/project3_MERN',
                 deployed: 'https://stormy-bastion-82943.herokuapp.com/',
                 language: ['React', 'JavaScript', 'MongoDb', 'Express']
