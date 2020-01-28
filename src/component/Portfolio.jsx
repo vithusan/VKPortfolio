@@ -1,30 +1,31 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 
 
 class Portfolio extends Component {
     state = {
         projects: [
             {
-                img: '/img/project4.png',
+                img: '../src/images/project4.png',
                 github: 'https://github.com/vithusan/Project4_Django',
                 deployed: 'http://18.188.218.226:3000/',
                 language: ['React', 'Django', 'Python', 'JavaScript']
             },
             {
-                img: '/img/project1.png',
+                img: './images/project1.png',
                 github: 'https://github.com/vithusan/connect4',
                 deployed: 'https://pages.git.generalassemb.ly/vithusan/P1-connect4/',
                 language: ['JavaScript', 'HTML5', 'CSS3']
             },
             {
-                img: '/img/project2.png',
+                img: './images/project2.png',
                 github: 'https://github.com/vithusan/project2',
                 deployed: 'https://tranquil-inlet-04681.herokuapp.com/type',
                 language: ['JavaScript', 'Handlebars', 'MongoDb', 'Express']
             },
             {
-                img: '/img/project3.png',
+                img: './images/project3.png',
                 github: 'https://github.com/vithusan/project3_MERN',
                 deployed: 'https://stormy-bastion-82943.herokuapp.com/',
                 language: ['React', 'JavaScript', 'MongoDb', 'Express']
