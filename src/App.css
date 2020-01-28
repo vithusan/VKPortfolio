@@ -272,6 +272,9 @@ a {
         font-size: 5em;
         padding: 25px; 
     }
+    .listOfSkills {
+        width: 80%;
+    }
 }
 
 /*--Mobiles--*/
@@ -280,8 +283,11 @@ a {
         width: 80%;
     }
     .languageIcon {
-        font-size: 5em;
-        padding: 15px; 
+        font-size: 4.5em;
+        padding: 12px; 
+    }
+    .listOfSkills {
+        width: 90%;
     }
     .portfolioNav .portfolioTitle{
         margin: 0 25% 0 auto;
