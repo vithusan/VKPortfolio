@@ -197,6 +197,17 @@ a {
     color: #fff;
 }
 
+.iconDes {
+    margin: auto;
+    font-size: 25px;
+    text-align: center;
+}
+
+.languageIcon:hover .iconDes {
+    color: #3c4a50;
+}
+
+
 .listOfSkills {
     width: 70%;
     display: flex;
