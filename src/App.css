@@ -317,4 +317,8 @@ a {
     .listOfLanguages{
         width: 340px;
     }
+
+    .iconDes{
+        font-size: 16px;
+    }
 }
